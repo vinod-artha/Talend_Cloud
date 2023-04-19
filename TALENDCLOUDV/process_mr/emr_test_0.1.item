@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" framework="Spark" jobType="Big_Data_Batch" xmi:id="_ZBSegNfsEe28x-Is2ft3kQ" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_ZBSegdfsEe28x-Is2ft3kQ"/>
+  <parameters xmi:id="_ZBSegtfsEe28x-Is2ft3kQ">
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info" xmi:id="_ZBSeg9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_ZBSehNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_ZBSehdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_ZBSehtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_ZBSeh9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_ZBSeiNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_ZBSeidfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_ZBSeitfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_ZBSei9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_ZBSejNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_ZBSejdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_ZBSejtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_ZBSej9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_ZBSekNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_ZBSekdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_ZBSektfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true" xmi:id="_ZBSek9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true" xmi:id="_ZBSelNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" xmi:id="_ZBSeldfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" xmi:id="_ZBSeltfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" xmi:id="_ZBSel9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false" xmi:id="_ZBSemNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false" xmi:id="_ZBSemdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;" xmi:id="_ZBSemtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;" xmi:id="_ZBSem9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false" xmi:id="_ZBSenNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15" xmi:id="_ZBSendfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15" xmi:id="_ZBSentfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value="" xmi:id="_ZBSen9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="" xmi:id="_ZBSeoNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSeodfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false" xmi:id="_ZBSeotfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSeo9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSepNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSepdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSeptfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSep9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSeqNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSeqdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSeqtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:TuAsoWkGe3sM55no6ttpWwTdp87TZkGHuWLnb2YN" xmi:id="_ZBSeq9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSerNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSerdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_ZBSertfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning" xmi:id="_ZBSer9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning" xmi:id="_ZBSesNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false" xmi:id="_ZBSesdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false" xmi:id="_ZBSestfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false" xmi:id="_ZBSes9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false" xmi:id="_ZBSetNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false" xmi:id="_ZBSetdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false" xmi:id="_ZBSettfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false" xmi:id="_ZBSet9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false" xmi:id="_ZBSeuNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false" xmi:id="_ZBSeudfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/vinod/Work/Talend/CloudWorkspace/.metadata&quot;" xmi:id="_ZBSeutfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;" xmi:id="_ZBSeu9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;" xmi:id="_ZBSevNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;" xmi:id="_ZBSevdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15" xmi:id="_ZBSevtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15" xmi:id="_ZBSev9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false" xmi:id="_ZBSewNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput" xmi:id="_ZBSewdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12" xmi:id="_ZBSewtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;" xmi:id="_ZBSew9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false" xmi:id="_ZBSexNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;" xmi:id="_ZBSexdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;" xmi:id="_ZBSextfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;" xmi:id="_ZBSex9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;" xmi:id="_ZBSeyNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;" xmi:id="_ZBSeydfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;" xmi:id="_ZBSeytfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;" xmi:id="_ZBSey9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;" xmi:id="_ZBSezNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;" xmi:id="_ZBSezdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Av4MQuZay1iVj4vgS8JUTVWtF6TtLpKPydySzcmT" xmi:id="_ZBSeztfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;" xmi:id="_ZBSez9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;" xmi:id="_ZBSe0NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;" xmi:id="_ZBSe0dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;" xmi:id="_ZBSe0tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true" xmi:id="_ZBSe09fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true" xmi:id="_ZBSe1NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true" xmi:id="_ZBSe1dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false" xmi:id="_ZBSe1tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value="" xmi:id="_ZBSe19fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false" xmi:id="_ZBSe2NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value="" xmi:id="_ZBSe2dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value="" xmi:id="_ZBSe2tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value="" xmi:id="_ZBSe29fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value="" xmi:id="_ZBSe3NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false" xmi:id="_ZBSe3dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value="" xmi:id="_ZBSe3tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value="" xmi:id="_ZBSe39fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value="" xmi:id="_ZBSe4NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_VERSION" value="EMR_62_x" xmi:id="_ZBSe4dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="SUPPORTED_SPARK_VERSION" value="SPARK_3_0_x" xmi:id="_ZBSe4tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_MODE" value="YARN_CLUSTER" xmi:id="_ZBSe49fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_RUNTIME_VERSION" show="false" value="" xmi:id="_ZBSe5NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="SPARKBATCH" value="" xmi:id="_ZBSe5dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value="" xmi:id="_ZBSe5tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="** The version of Spark must be 1.3.0 or later." xmi:id="_ZBSe59fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_API_VERSION" show="false" value="SPARK_240" xmi:id="_ZBSe6NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SET_HDP_VERSION" show="false" value="false" xmi:id="_ZBSe6dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HDP_VERSION" show="false" value="&quot;x.x.x.x-x&quot;" xmi:id="_ZBSe6tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="UNIV_STANDALONE_MASTER" show="false" value="&quot;spark://localhost:7077&quot;" xmi:id="_ZBSe69fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="UNIV_STANDALONE_CONFIGURE_EXEC" show="false" value="false" xmi:id="_ZBSe7NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="UNIV_STANDALONE_EXEC_MEMORY" show="false" value="&quot;20G&quot;" xmi:id="_ZBSe7dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="UNIV_STANDALONE_EXEC_CORE" show="false" value="&quot;100&quot;" xmi:id="_ZBSe7tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_MASTER" show="false" value="&quot;k8s://https://0.0.0.0:12345&quot;" xmi:id="_ZBSe79fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_INSTANCES" show="false" value="&quot;5&quot;" xmi:id="_ZBSe8NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="K8S_REGISTRYSECRET_CHECK" show="false" value="false" xmi:id="_ZBSe8dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_REGISTRYSECRET" show="false" value="&quot;registry-secret&quot;" xmi:id="_ZBSe8tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_IMAGE" show="false" value="&quot;registry:port/image:tag&quot;" xmi:id="_ZBSe89fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_NAMESPACE" show="false" value="&quot;default&quot;" xmi:id="_ZBSe9NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_SERVICEACCOUNT" show="false" value="&quot;spark&quot;" xmi:id="_ZBSe9dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="K8S_DISTUPLOAD" show="false" value="S3" xmi:id="_ZBSe9tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_S3BUCKET" show="false" value="&quot;&quot;" xmi:id="_ZBSe99fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_TEMPFOLDER" show="false" value="&quot;/path/to/folder&quot;" xmi:id="_ZBSe-NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="K8S_S3CREDENTIALS" show="false" value="ACCESSANDSECRET" xmi:id="_ZBSe-dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_S3ACCESSKEY" show="false" value="&quot;&quot;" xmi:id="_ZBSe-tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="K8S_S3SECRETKEY" show="false" value="enc:system.encryption.key.v1:GpChh6blKd7OZJX/zE0sPGxPZJZA///R7foBaMAC" xmi:id="_ZBSe-9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_BLOBACCOUNT" show="false" value="&quot;&quot;" xmi:id="_ZBSe_NfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_BLOBCONTAINER" show="false" value="&quot;&quot;" xmi:id="_ZBSe_dfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="K8S_BLOBSECRETKEY" show="false" value="enc:system.encryption.key.v1:ptwuKFHEJhGLxmbFJ+t2UkRUL20ClwK+1DpdEOz4" xmi:id="_ZBSe_tfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_AZUREACCOUNT" show="false" value="&quot;&quot;" xmi:id="_ZBSe_9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="K8S_AZURECREDENTIALS" show="false" value="SECRET" xmi:id="_ZBSfANfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_AZURECONTAINER" show="false" value="&quot;&quot;" xmi:id="_ZBSfAdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="K8S_AZURESECRETKEY" show="false" value="enc:system.encryption.key.v1:2vb/tA5w5FDbPNQrCkzhvB2uBAThZXxWt5Wh/S4S" xmi:id="_ZBSfAtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="K8S_AZUREAADKEY" show="false" value="enc:system.encryption.key.v1:9Ov9ZFf/KqGTapJN6Sw+KDEowBruPCrw54jkarT+" xmi:id="_ZBSfA9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_AZUREAADCLIENTID" show="false" value="&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;" xmi:id="_ZBSfBNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="K8S_AZUREAADDIRECTORYID" show="false" value="&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;" xmi:id="_ZBSfBdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_CONF" value="false" xmi:id="_ZBSfBtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HADOOP_CONF_SPECIFIC_JAR" show="false" value="&quot;path/to/hadoop_conf.jar&quot;" xmi:id="_ZBSfB9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;&quot;" xmi:id="_ZBSfCNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="false" xmi:id="_ZBSfCdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" show="false" value="&quot;&quot;" xmi:id="_ZBSfCtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="false" xmi:id="_ZBSfC9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" show="false" value="&quot;&quot;" xmi:id="_ZBSfDNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SET_STAGING_DIRECTORY" value="false" xmi:id="_ZBSfDdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="STAGING_DIRECTORY" show="false" value="&quot;/user&quot;" xmi:id="_ZBSfDtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_ENDPOINT" show="false" value="&quot;https://xxxx.azurehdinsight.net&quot;" xmi:id="_ZBSfD9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" show="false" value="&quot;&quot;" xmi:id="_ZBSfENfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" show="false" value="enc:system.encryption.key.v1:Mjaq3mdr/GRcfvy8QC/YpQCj0bVOBVlp/ofqA+6C" xmi:id="_ZBSfEdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="LIVY_HOST" show="false" value="&quot;&quot;" xmi:id="_ZBSfEtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="LIVY_PORT" show="false" value="&quot;443&quot;" xmi:id="_ZBSfE9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="LIVY_USERNAME" show="false" value="&quot;&quot;" xmi:id="_ZBSfFNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_POLLING_INTERVAL_DURATION" show="false" value="30000" xmi:id="_ZBSfFdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_MAX_MISSING_STATUS" show="false" value="10" xmi:id="_ZBSfFtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" show="false" value="&quot;&quot;" xmi:id="_ZBSfF9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" show="false" value="enc:system.encryption.key.v1:bptpdp19qOVHqHI+PU3DYb329xU8dYCkMT8wUqbF" xmi:id="_ZBSfGNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="HDINSIGHT_STORAGE" show="false" value="ADLS_GEN2" xmi:id="_ZBSfGdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="HDINSIGHT_STORAGE_USE_TLS" show="false" value="false" xmi:id="_ZBSfGtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="WASB_HOST" show="false" value="&quot;&quot;" xmi:id="_ZBSfG9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" show="false" value="&quot;&quot;" xmi:id="_ZBSfHNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" show="false" value="&quot;&quot;" xmi:id="_ZBSfHdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" show="false" value="enc:system.encryption.key.v1:/tcNF5E+1V/amtVtUND1cm3pEqPnyDe3RybOdvSk" xmi:id="_ZBSfHtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" show="false" value="&quot;&quot;" xmi:id="_ZBSfH9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SYNAPSE_ENDPOINT" show="false" value="&quot;https://xxxx.dev.azuresynapse.net&quot;" xmi:id="_ZBSfINfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="SYNAPSE_TOKEN" show="false" value="enc:system.encryption.key.v1:k1ebn3k+XEuez/YQXyi4rYgtoKbbpYr0qGulLQl9" xmi:id="_ZBSfIdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_POOL_NAME" show="false" value="&quot;&quot;" xmi:id="_ZBSfItfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SYNAPSE_POLLING_INTERVAL_DURATION" show="false" value="30000" xmi:id="_ZBSfI9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SYNAPSE_MAX_MISSING_STATUS" show="false" value="10" xmi:id="_ZBSfJNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="ADLSGEN2AUTH" show="false" value="&quot;SECRETKEY&quot;" xmi:id="_ZBSfJdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="SYNAPSE_STORAGE" show="false" value="ADLS_GEN2" xmi:id="_ZBSfJtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SYNAPSE_USE_CERTIFICATE" show="false" value="false" xmi:id="_ZBSfJ9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SYNAPSE_STORAGE_HOST" show="false" value="&quot;https://xxxx.dfs.core.windows.net&quot;" xmi:id="_ZBSfKNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SYNAPSE_STORAGE_CONTAINER" show="false" value="&quot;&quot;" xmi:id="_ZBSfKdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SYNAPSE_STORAGE_USERNAME" show="false" value="&quot;&quot;" xmi:id="_ZBSfKtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="SYNAPSE_STORAGE_PASSWORD" show="false" value="enc:system.encryption.key.v1:6rqRkyy7n8lpN8ttrb/Dmi3hZbVw0vZ2cueJNLqV" xmi:id="_ZBSfK9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" show="false" value="&quot;&quot;" xmi:id="_ZBSfLNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SYNAPSE_DIRECTORY_ID" show="false" value="&quot;XXXX-XXXX-XXXX-XXXX-XXXX&quot;" xmi:id="_ZBSfLdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SYNAPSE_APPLICATION_ID" show="false" value="&quot;XXXX-XXXX-XXXX-XXXX-XXXX&quot;" xmi:id="_ZBSfLtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="SYNAPSE_CLIENT_KEY" show="false" value="enc:system.encryption.key.v1:dIIp17GxNJZ5yfdqxzoPdK9j3M/BNFjajvyUmqHV" xmi:id="_ZBSfL9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="FILE" name="SYNAPSE_CLIENT_CERTIFICATE" show="false" value="&quot;&quot;" xmi:id="_ZBSfMNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_KNOX" show="false" value="false" xmi:id="_ZBSfMdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="KNOX_URL" show="false" value="&quot;&quot;" xmi:id="_ZBSfMtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="KNOX_USERNAME" show="false" value="&quot;&quot;" xmi:id="_ZBSfM9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="KNOX_PASSWORD" show="false" value="enc:system.encryption.key.v1:UU+G3LseSMaUITvSwehlYS6CXBea3hOaaBGs/ScG" xmi:id="_ZBSfNNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="WEBHDFS_FOLDER" show="false" value="&quot;/tmp&quot;" xmi:id="_ZBSfNdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="KNOX_POLLING_INTERVAL_DURATION" show="false" value="30000" xmi:id="_ZBSfNtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="KNOX_MAX_MISSING_STATUS" show="false" value="10" xmi:id="_ZBSfN9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_HOST" show="false" value="&quot;spark://localhost:7077&quot;" xmi:id="_ZBSfONfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_HOME" show="false" value="&quot;/usr/lib/spark&quot;" xmi:id="_ZBSfOdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DEFINE_HADOOP_HOME_DIR" value="false" xmi:id="_ZBSfOtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HADOOP_HOME_DIR" show="false" value="&quot;C:/Talend/winutils&quot;" xmi:id="_ZBSfO9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DEFINE_SPARK_DRIVER_HOST" show="false" value="false" xmi:id="_ZBSfPNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_HOST" show="false" value="&quot;127.0.0.1&quot;" xmi:id="_ZBSfPdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_LIGHTWEIGHT_DEPENDENCIES" value="false" xmi:id="_ZBSfPtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_CLASSPATH" show="false" value="false" xmi:id="_ZBSfP9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CUSTOM_CLASSPATH" show="false" value="&quot;&quot;" xmi:id="_ZBSfQNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_DATASET_API" value="true" xmi:id="_ZBSfQdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATASET" value="false" xmi:id="_ZBSfQtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_LOCAL_TIMEZONE" value="false" xmi:id="_ZBSfQ9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" show="false" value="&quot;my-google-project&quot;" xmi:id="_ZBSfRNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" show="false" value="&quot;my-cluster-id&quot;" xmi:id="_ZBSfRdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" show="false" value="&quot;global&quot;" xmi:id="_ZBSfRtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" show="false" value="&quot;gs://my-bucket/talend/jars&quot;" xmi:id="_ZBSfR9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DEFINE_GOOGLE_CREDENTIALS" show="false" value="false" xmi:id="_ZBSfSNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" show="false" value="&quot;OAUTH_API&quot;" xmi:id="_ZBSfSdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="FILE" name="PATH_TO_GOOGLE_CREDENTIALS" show="false" value="&quot;&quot;" xmi:id="_ZBSfStfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="OAUTH_ACCESS_TOKEN" show="false" value="enc:system.encryption.key.v1:Dvym7eoiPVvWp+djI/dqJZFaCrRHpiizVIOHr/fJ" xmi:id="_ZBSfS9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" xmi:id="_ZBSfTNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" show="false" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" xmi:id="_ZBSfTdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_PRINCIPAL" show="false" value="&quot;mapred/_HOST@EXAMPLE.COM&quot;" xmi:id="_ZBSfTtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false" xmi:id="_ZBSfT9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;" xmi:id="_ZBSfUNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;" xmi:id="_ZBSfUdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" xmi:id="_ZBSfUtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false" xmi:id="_ZBSfU9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="enc:system.encryption.key.v1:+99f5qgqZwzhSXxKBzR1KIg4nDi3aqd7z7z9RbpP" xmi:id="_ZBSfVNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;" xmi:id="_ZBSfVdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L" xmi:id="_ZBSfVtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false" xmi:id="_ZBSfV9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;" xmi:id="_ZBSfWNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false" xmi:id="_ZBSfWdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;" xmi:id="_ZBSfWtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="ADVANCED_SETTINGS_CHECK" value="false" xmi:id="_ZBSfW9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="LABEL" name="SYNAPSE_NOTE" show="false" value="Please turn on tuning properties, it is required to run spark job on Azure Synapse." xmi:id="_ZBSfXNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_MEM" show="false" value="&quot;512m&quot;" xmi:id="_ZBSfXdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_CORES" show="false" value="&quot;1&quot;" xmi:id="_ZBSfXtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SPARK_YARN_AM_SETTINGS_CHECK" show="false" value="false" xmi:id="_ZBSfX9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_AM_MEM" show="false" value="&quot;512m&quot;" xmi:id="_ZBSfYNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_AM_CORES" show="false" value="&quot;1&quot;" xmi:id="_ZBSfYdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_MEM" show="false" value="&quot;512m&quot;" xmi:id="_ZBSfYtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SET_SPARK_EXECUTOR_MEM_OVERHEAD" show="false" value="false" xmi:id="_ZBSfY9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_MEM_OVERHEAD" show="false" value="&quot;384&quot;" xmi:id="_ZBSfZNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SPARK_EXECUTOR_CORES_CHECK" show="false" value="false" xmi:id="_ZBSfZdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_CORES" show="false" value="&quot;1&quot;" xmi:id="_ZBSfZtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_YARN_ALLOC_TYPE" show="false" value="AUTO" xmi:id="_ZBSfZ9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_INSTANCES" show="false" value="&quot;2&quot;" xmi:id="_ZBSfaNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_INIT" show="false" value="&quot;1&quot;" xmi:id="_ZBSfadfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_MIN" show="false" value="&quot;0&quot;" xmi:id="_ZBSfatfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_MAX" show="false" value="&quot;MAX&quot;" xmi:id="_ZBSfa9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="WEB_UI_PORT_CHECK" show="false" value="false" xmi:id="_ZBSfbNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="WEB_UI_PORT" show="false" value="&quot;4040&quot;" xmi:id="_ZBSfbdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_BROADCAST_FACTORY" show="false" value="AUTO" xmi:id="_ZBSfbtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CUSTOMIZE_SPARK_SERIALIZER" show="false" value="false" xmi:id="_ZBSfb9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_SERIALIZER" show="false" value="&quot;org.apache.spark.serializer.KryoSerializer&quot;" xmi:id="_ZBSfcNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_STATS_POLLING_RATE" show="false" value="&quot;50&quot;" xmi:id="_ZBSfcdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="ENABLE_SPARK_EVENT_LOGGING" value="false" xmi:id="_ZBSfctfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="COMPRESS_SPARK_EVENT_LOGS" show="false" value="false" xmi:id="_ZBSfc9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_EVENT_LOG_DIR" show="false" value="&quot;hdfs://namenode:8020/user/spark/applicationHistory&quot;&#10;            " xmi:id="_ZBSfdNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARKHISTORY_ADDRESS" show="false" value="&quot;sparkHistoryServer:18080&quot;" xmi:id="_ZBSfddfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="SPARK_SCRATCH_DIR" value="&quot;/tmp&quot;" xmi:id="_ZBSfdtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="WAIT_FOR_THE_JOB_TO_COMPLETE" value="true" xmi:id="_ZBSfd9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_CHECKPOINT" value="false" xmi:id="_ZBSfeNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CHECKPOINT_DIR" show="false" value="&quot;file:///tmp/mycheckpoint&quot;" xmi:id="_ZBSfedfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TABLE" name="SPARK_ADVANCED_PROPERTIES" xmi:id="_ZBSfetfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_CLOUDERA_NAVIGATOR" show="false" value="false" xmi:id="_ZBSfe9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_USERNAME" show="false" value="&quot;username&quot;" xmi:id="_ZBSffNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="CLOUDERA_NAVIGATOR_PASSWORD" show="false" value="enc:system.encryption.key.v1:U4uhYtoRrKQRMMBmfSNqwGmLm2sg0KuWXlXMlroaPjFF1xDOrG8=" xmi:id="_ZBSffdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_URL" show="false" value="&quot;http://localhost:7187/api/v8/&quot;" xmi:id="_ZBSfftfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_METADATA_URL" show="false" value="&quot;http://localhost:7187/api/v8/metadata/plugin&quot;" xmi:id="_ZBSff9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_CLIENT_URL" show="false" value="&quot;http://localhost&quot;" xmi:id="_ZBSfgNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CLOUDERA_NAVIGATOR_AUTOCOMMIT" show="false" value="false" xmi:id="_ZBSfgdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CLOUDERA_NAVIGATOR_DISABLE_SSL_VALIDATION" show="false" value="false" xmi:id="_ZBSfgtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CLOUDERA_NAVIGATOR_DIE_ON_ERROR" show="false" value="true" xmi:id="_ZBSfg9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="USE_ATLAS" show="false" value="false" xmi:id="_ZBSfhNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="ATLAS_URL" show="false" value="&quot;http://localhost:21000&quot;" xmi:id="_ZBSfhdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="ATLAS_USERNAME" show="false" value="&quot;admin&quot;" xmi:id="_ZBSfhtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="ATLAS_PASSWORD" show="false" value="enc:system.encryption.key.v1:f4rdaONX8osCZQg65w4hhqCMROJpEwak/tl340U/" xmi:id="_ZBSfh9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="SET_ATLAS_APPLICATION_PROPERTIES" show="false" value="false" xmi:id="_ZBSfiNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="ATLAS_APPLICATION_PROPERTIES" show="false" value="&quot;/user/atlas/atlas-application.properties&quot;" xmi:id="_ZBSfidfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="ATLAS_DIE_ON_ERROR" show="false" value="false" xmi:id="_ZBSfitfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CDE_API_ENDPOINT" show="false" value="" xmi:id="_ZBSfi9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="CDE_TOKEN" show="false" value="" xmi:id="_ZBSfjNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CDE_AUTO_GENERATE_TOKEN" show="false" value="false" xmi:id="_ZBSfjdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CDE_TOKEN_ENDPOINT" show="false" value="&quot;[BASE_URL]/gateway/authtkn&quot;" xmi:id="_ZBSfjtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CDE_WORKLOAD_USER" show="false" value="" xmi:id="_ZBSfj9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="CDE_WORKLOAD_PASSWORD" show="false" value="" xmi:id="_ZBSfkNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CDE_ENABLE_CLIENT_DEBUGGING" show="false" value="false" xmi:id="_ZBSfkdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CDE_OVERRIDE_DEPENDENCIES" show="false" value="false" xmi:id="_ZBSfktfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CDE_POLLING_INTERVAL" show="false" value="&quot;10000&quot;" xmi:id="_ZBSfk9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CDE_FETCH_LOGS" show="false" value="false" xmi:id="_ZBSflNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CDE_FETCH_DRIVER_STD_LOGS" show="false" value="true" xmi:id="_ZBSfldfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CDE_FETCH_DRIVER_ERROR_LOGS" show="false" value="false" xmi:id="_ZBSfltfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="CDE_ADVANCED_PARAMS" show="false" value="false" xmi:id="_ZBSfl9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CDE_NUM_EXECUTORS" show="false" value="&quot;1&quot;" xmi:id="_ZBSfmNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CDE_DRIVER_CORES" show="false" value="&quot;1&quot;" xmi:id="_ZBSfmdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CDE_DRIVER_MEMORY" show="false" value="&quot;1g&quot;" xmi:id="_ZBSfmtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CDE_EXECUTOR_CORES" show="false" value="&quot;1&quot;" xmi:id="_ZBSfm9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="CDE_EXECUTOR_MEMORY" show="false" value="&quot;1g&quot;" xmi:id="_ZBSfnNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_CLOUD_PROVIDER" show="false" value="&quot;AWS&quot;" xmi:id="_ZBSfndfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_RUN_MODE" show="false" value="&quot;CREATE_RUN_JOB&quot;" xmi:id="_ZBSfntfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_USE_POOL" show="false" value="false" xmi:id="_ZBSfn9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_ENDPOINT" show="false" value="&quot;https://westeurope.azuredatabricks.net&quot;" xmi:id="_ZBSfoNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_CLUSTER_ID" show="false" value="&quot;&quot;" xmi:id="_ZBSfodfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_POOL_ID" show="false" value="&quot;&quot;" xmi:id="_ZBSfotfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="PASSWORD" name="DATABRICKS_TOKEN" show="false" value="enc:system.encryption.key.v1:USP5Z+OkfDV6kq/Vf6AnvC3w+1UxMJC3cfAcsB5B" xmi:id="_ZBSfo9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_DBFS_DEP_FOLDER" show="false" value="&quot;&quot;" xmi:id="_ZBSfpNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_DBFS_DEP_GCP_PROJECT" show="false" value="&quot;&quot;" xmi:id="_ZBSfpdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_DBFS_DEP_GCP_BUCKET" show="false" value="&quot;&quot;" xmi:id="_ZBSfptfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_DBFS_DEP_GCP_WORKSPACE_ID" show="false" value="&quot;&quot;" xmi:id="_ZBSfp9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="FILE" name="DATABRICKS_DBFS_DEP_GCP_JSONFILE" show="false" value="&quot;&quot;" xmi:id="_ZBSfqNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_TIMEOUT_REQUESTS" show="false" value="30000" xmi:id="_ZBSfqdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_CLUSTER_TYPE" show="false" value="&quot;INTERACTIVE&quot;" xmi:id="_ZBSfqtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_USE_POLICY" show="false" value="false" xmi:id="_ZBSfq9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_POLICY" show="false" value="&quot;&quot;" xmi:id="_ZBSfrNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_USE_PRODUCTION_MODE" show="false" value="false" xmi:id="_ZBSfrdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_AUTOSCALE" show="false" value="false" xmi:id="_ZBSfrtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_NUM_WORKERS" show="false" value="2" xmi:id="_ZBSfr9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_AUTOSCALE_MIN" show="false" value="2" xmi:id="_ZBSfsNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_AUTOSCALE_MAX" show="false" value="10" xmi:id="_ZBSfsdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="DATABRICKS_NODE_TYPE" show="false" value="" xmi:id="_ZBSfstfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="DATABRICKS_DRIVER_NODE_TYPE" show="false" value="" xmi:id="_ZBSfs9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_ENABLE_CREDENTIALS_PASSTROUGH" show="false" value="false" xmi:id="_ZBSftNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_SINGLE_USER_NAME" show="false" value="&quot;&quot;" xmi:id="_ZBSftdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_FIRST_ON_DEMAND_CB" show="false" value="false" xmi:id="_ZBSfttfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_FIRST_ON_DEMAND" show="false" value="&quot;1&quot;" xmi:id="_ZBSft9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_AVAILABILITY_CB" show="false" value="true" xmi:id="_ZBSfuNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_ZONE_ID_CB" show="false" value="false" xmi:id="_ZBSfudfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_ZONE_ID" show="false" value="&quot;us-east-1b&quot;" xmi:id="_ZBSfutfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_SPOT_BID_PRICE_PERCENT_CB" show="false" value="false" xmi:id="_ZBSfu9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_SPOT_BID_PRICE_PERCENT" show="false" value="&quot;100&quot;" xmi:id="_ZBSfvNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="DATABRICKS_EBS_VOLUME_TYPE" show="false" value="NONE" xmi:id="_ZBSfvdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_EBS_VOLUME_COUNT" show="false" value="&quot;3&quot;" xmi:id="_ZBSfvtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_EBS_VOLUME_SIZE" show="false" value="&quot;100&quot;" xmi:id="_ZBSfv9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_CONFIGURE_INSTANCE_PROFILE_ARN" show="false" value="false" xmi:id="_ZBSfwNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_INSTANCE_PROFILE_ARN" show="false" value="&quot;&quot;" xmi:id="_ZBSfwdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_ELASTIC_DISK" show="false" value="false" xmi:id="_ZBSfwtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_SSH_PUBLIC_KEY" show="false" value="&quot;&quot;" xmi:id="_ZBSfw9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_CONFIGURE_CLUSTER_LOG" show="false" value="false" xmi:id="_ZBSfxNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CLOSED_LIST" name="DATABRICKS_CLUSTER_LOG_TYPE" show="false" value="&quot;DBFS&quot;" xmi:id="_ZBSfxdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_CLUSTER_LOG_DESTINATION" show="false" value="&quot;dbfs:/my/destination&quot;" xmi:id="_ZBSfxtfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_S3_REGION" show="false" value="&quot;us-east-1&quot;" xmi:id="_ZBSfx9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_CONFIGURE_CLUSTER_LOG_ENCRYPTION" show="false" value="false" xmi:id="_ZBSfyNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="CHECK" name="DATABRICKS_CONFIGURE_CLUSTER_LOG_CANNED_ACL" show="false" value="false" xmi:id="_ZBSfydfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_CLUSTER_LOG_CANNED_ACL" show="false" value="&quot;bucket-owner-full-control&quot;" xmi:id="_ZBSfytfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_CONFIGURE_CLUSTER_LOG_ENCRYPTION_TYPE" show="false" value="&quot;sse-s3&quot;" xmi:id="_ZBSfy9fsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_CONFIGURE_CLUSTER_LOG_ENCRYPTION_KMS_KEY" show="false" value="&quot;&quot;" xmi:id="_ZBSfzNfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TABLE" name="DATABRICKS_TAGS" show="false" xmi:id="_ZBSfzdfsEe28x-Is2ft3kQ"/>
+    <elementParameter field="TABLE" name="DATABRICKS_INIT_SCRIPTS" show="false" xmi:id="_ZBSfztfsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R9kfALnuEe2zSc6cz8IdTA" name="DataOperation" xmi:id="_ZBSfz9fsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R9veILnuEe2zSc6cz8IdTA" name="Mathematical" xmi:id="_ZBSf0NfsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R96dQLnuEe2zSc6cz8IdTA" name="Numeric" xmi:id="_ZBSf0dfsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R-NYMLnuEe2zSc6cz8IdTA" name="Relational" xmi:id="_ZBSf0tfsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R5VfQLnuEe2zSc6cz8IdTA" name="SQLike" xmi:id="_ZBSf09fsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R-VUALnuEe2zSc6cz8IdTA" name="StringHandling" xmi:id="_ZBSf1NfsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R-cowLnuEe2zSc6cz8IdTA" name="TalendDataGenerator" xmi:id="_ZBSf1dfsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R-tHcLnuEe2zSc6cz8IdTA" name="TalendDate" xmi:id="_ZBSf1tfsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R-_bULnuEe2zSc6cz8IdTA" name="TalendStringUtil" xmi:id="_ZBSf19fsEe28x-Is2ft3kQ"/>
+    <routinesParameter id="_R-1qULnuEe2zSc6cz8IdTA" name="TalendString" xmi:id="_ZBSf2NfsEe28x-Is2ft3kQ"/>
+  </parameters>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e6d7dc24-6268-42d9-b796-90808053538e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nm/DCPozHnxIiNGmLxRPPwVdFT/7nWgr2aU1MfUq8lcrrDabreA/vwxFdz2Mh5/ysaYlU0EEUeU/&#13;
+sF72ZOqq3w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_242f68f4-63d9-416b-8a4c-1ee5e7cff219"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RJHg78kqXJhzadkB/qlvaiS+5i+LLFl7CK9UNMmaesuNGpIYqsYTlcd/4WH75Nm2aSz3KKjgRrHP&#13;
+NjjRK4WC+A==</DigestValue></Reference></SignedInfo><SignatureValue>ZOETXJfZI/AhEUMeQgsxOQDQA/kpj/B0Ncy3A+68UhVU7rhbyWIk4JqIVFNPpwPZprNeo6PaoCV0&#13;
+Yc2giZJTbqsWhdL5CCYK7XGVo3kzRscrfGc9nLc+F8IappMxqBUil8WgJb2Z70iWuwMNOPeQH3yo&#13;
+/imHk1Feix1oUmToBjJy8MmsRVPWzdJxvmK31PfKQ3urZT7fVHGqjZ+fxxLs7INQUW06ZmjSMxSZ&#13;
+w3BodQWuksLqGXE0mpVwWJgdVFEja+JQqkNf2pSRkGAfcT/xoJNZT5C95R+isjg+PlWwvETup8Jg&#13;
+0pmf+I9jlLfioxg+bNSf+DS9XnSDqCdtZMACwQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_242f68f4-63d9-416b-8a4c-1ee5e7cff219" Target="#_e6d7dc24-6268-42d9-b796-90808053538e"><Timestamp>2023-04-10 22:09:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

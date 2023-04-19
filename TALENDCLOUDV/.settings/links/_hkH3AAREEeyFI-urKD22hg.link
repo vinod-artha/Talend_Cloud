@@ -1,0 +1,11 @@
+{
+  "itemId" : "_hkH3AAREEeyFI-urKD22hg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_-kCEQAQ2EeyFI-urKD22hg",
+    "parameterList" : [ {
+      "id" : "_-kdiEgQ2EeyFI-urKD22hg",
+      "name" : "AWS_EMR_hdfsUser"
+    } ]
+  } ]
+}
